@@ -1,0 +1,41 @@
+Loops
+Aprenderemos como iterar objetos dentro do javascript. Temos as seguintes opções:
+
+FOREACH
+WHILE
+FOR
+As estruturas de iterações e loops não fogem muito das demais linguagens.
+
+While
+Cada iteração irá acontecer com base em uma condição e esta, tende a mudar, ao final de cada iteração.
+
+Exemplo:
+
+var i = 0;
+
+while(i < 10){
+    console.log(i);
+    i++;
+}
+
+
+Uma iteração sempre começará em 0, por este motivo temos até o 9 e não 10, como sendo o último elemento. De 0 a 9 temos os 10 elementos que esperávamos. Caso queiram que termine em 10, vocês deverão alterar a lógica para: while(i <= 10).
+
+Qual a lógica que está por trás desta estrutura?
+
+Primeiro, há uma análise da condição while(i < 10). Como iniciamos a variável i = 0 a condição será válida.
+Depois, como passou pela lógica, irá executar o bloco interno. Que imprime o valor da variável e soma 1 ao valor atual. Como era 0 agora passa a ser 1.
+Volta a analisar a lógica, onde o i não é mais 0, mas sim 1. Como 1 é menor que 10 ainda ele executa, novamente. Imprime o valor e soma mais 1. O valor de i agora é 2 e assim passará pela logica, novamente, até que o valor de i seja 10. Como 10 não é menor do que 10 a repetição tem um fim. Por isso que acaba em 9, porque 9 é o último número menor do que 10.
+For
+for(var a = 0; a < 10; a++){
+    console.log(a);
+}
+
+Observem que temos o mesmo resultado no console. E a lógica que acontece, é a mesma que a do while. Só modifica a estrutura. O for soma 1, automaticamente, por sua declaração, o while não soma automaticamente. Temos que inserir, dentro do loop, o incremento, caso não façamos, teremos um erro de loop infinito.
+
+Quando o loop não tem fim é porque a lógica sempre será verdadeira e nunca terá um valor falso.
+
+No exemplo do while, caso não somarmos 1 a cada iteração, a lógica sempre será verdadeira, porque o i sempre será zero e zero é sempre menor do que 10. Temos um caso de loop infinito. O mesmo acontece no loop for, se não incrementarmos a variável a. Estejam muito atentos a isso.
+
+Foreach
+O foreach utiliza callback para sua iteração e quando utilizamos callback, estamos trabalhando de forma assíncrona. Temos que prestar atenção, porque quando trabalhamos de forma assíncrona, sabemos a hora que demos entrada à execução, mas não conseguimos saber quando esta execução será fin...

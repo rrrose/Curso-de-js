@@ -1,0 +1,9 @@
+Depois de baixar o python, é necessário incluí-lo no path do windows.
+Para usar o localhost:3000
+    navegue até a pasta desejada
+    digite: python -m SimpleHTTPServer 3000
+    aperte enter
+    Depois é só abrir o localhost:3000 no navegador
+
+PESQUISAR: Switch
+           Callback 
