@@ -31,6 +31,26 @@ var obj = {
 console.log(obj);
 */
 
+// INTERAÇÃO ATRAVÉS DE EVENTOS
+function validarNumero() {
+    var number = document.getElementById("numero").value;
+
+    if (isNaN(number) || (number >= 1 && number <= 10)) {
+        alert('O número digitado não é válido.');
+    } else {
+        alert('O número digitado é válido.');
+    }
+}
+
+//OUTRO EXERCÍCIO DE INTERAÇÃO
+var clicar = document.getElementById('clicar');
+
+clicar.addEventListener('click', fnClickMe);
+
+function fnClickMe() {
+    alert('Você clicou em mim!')
+}
+
 // ARRAYS
 
 var coisas = [
